@@ -1,9 +1,10 @@
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class FirstUniqueCharacter {
 	public static void main(String[] args) {
-		String str = "hello";
+		String str = "eballo";
 		char uniqueChar = uniqueChar(str);
 		System.out.println(uniqueChar);
 
@@ -11,7 +12,7 @@ public class FirstUniqueCharacter {
 
 	private static char uniqueChar(String str) {
 		// TODO Auto-generated method stub
-		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+		HashMap<Character, Integer> map = new LinkedHashMap<Character, Integer>();
 		for (int i = 0; i < str.length(); i++) {
 			if (map.containsKey(str.charAt(i))) {
 				map.put(str.charAt(i), map.get(str.charAt(i)) + 1);
