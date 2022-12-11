@@ -1,20 +1,21 @@
 
 public class PowerOf3 {
 	public static void main(String[] args) {
-		int n = 27;
+		int n = 25;
+		int x=5;
 
-		System.out.println(power3(n));
+		System.out.println(power3(n,x));
 
 	}
 
-	private static boolean power3(int n) {
+	private static boolean power3(int n,int x) {
 		// TODO Auto-generated method stub
 
-		while (n >= 4) {
-			if (n % 4 != 0) {
+		while (n >= x) {
+			if (n % x != 0) {
 				return false;
 			} else {
-				n = n / 4;
+				n = n / x;
 			}
 		}
 		if (n == 1) {
