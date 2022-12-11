@@ -18,6 +18,8 @@ public class PowerOf3 {
 				n = n / x;
 			}
 		}
+		
+		
 		if (n == 1) {
 			return true;
 		} else {
