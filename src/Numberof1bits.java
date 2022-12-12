@@ -4,7 +4,6 @@ public class Numberof1bits {
 		int n=5;
 	System.out.println(	hammingWeight(n));
 	}
-
 	private static int hammingWeight(int n) {
 		 int result=0;
 			while(n!=0) {
