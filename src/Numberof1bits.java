@@ -7,7 +7,7 @@ public class Numberof1bits {
 
 	private static int hammingWeight(int n) {
 		int count = 0;
-		for (int i = 0; i <= 32; i++) {
+		for (int i = 0; i <32; i++) {
 			count += (n % 2 == 0) ? 0 : 1;
 			n >>>= 1;
 		}
